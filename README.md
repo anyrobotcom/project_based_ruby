@@ -7,6 +7,7 @@ See `New Bot - <your platform>` in Wiki.
 ## Install dependencies (macOS)
 
 ```shell
+windows@developer> brew install postgresql # If not installed
 macbook@developer> brew install google-chrome # We use Chrome for everything
 macbook@developer> brew install chromedriver # Needed for Waitir
 ```
@@ -14,6 +15,7 @@ macbook@developer> brew install chromedriver # Needed for Waitir
 ## Install dependencies (Windows)
 
 ```shell
+windows@developer> choco install postgresql # If not installed
 windows@developer> choco install googlechrome # We use Chrome for everything
 windows@developer> choco install chromedriver # Needed for Waitir
 ```
