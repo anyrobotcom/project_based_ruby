@@ -1,0 +1,26 @@
+# SYSTEM ------------------------------
+chrome:
+  headless: false # Set true if that's production environment
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+timeout:
+  enable: true # Enable or disable
+  default: 3600 # Set 60 minutes for default timeout
+sentry:
+  dsn: _INSERT_HERE_
+# NOTIFICATIONS ------------------------------
+smsapi:
+  enable: true
+  token: _INSERT_HERE_
+  sender: _INSERT_HERE_
+  recipients:
+    - _INSERT_HERE_
+    - _INSERT_HERE_
+    - _INSERT_HERE_
+pushover:
+  enable: true
+  api_token: _INSERT_HERE_
+  user_key: _INSERT_HERE_
+mailgun:
+  api_key: _INSERT_HERE_
+  server: api.eu.mailgun.net # Or other if US
+  domain: _INSERT_HERE_
