@@ -4,11 +4,18 @@
 
 See `New Bot - <your platform>` in Wiki.
 
-## Install dependencies
+## Install dependencies (macOS)
 
 ```shell
 macbook@developer> brew install google-chrome # We use Chrome for everything
 macbook@developer> brew install chromedriver # Needed for Waitir
+```
+
+## Install dependencies (Windows)
+
+```shell
+windows@developer> choco install googlechrome # We use Chrome for everything
+windows@developer> choco install chromedriver # Needed for Waitir
 ```
 
 ## Run
