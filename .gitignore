@@ -14,5 +14,4 @@ cache/*.*
 db/*.sqlite3
 launch/*.plist
 launch/*.sh
-Gemfile.lock
 .anyrobot-environment
