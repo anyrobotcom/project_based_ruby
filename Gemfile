@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "httparty" # Easy API
+gem "railties" # Make sure that we have this
 gem "pry", "~> 0.12.2" # Better debugger
 gem "tty-file" # File manipulation utility methods
 gem "tty-logger" # A readable, structured and beautiful logging for the terminal
@@ -18,7 +19,7 @@ gem "rubocop", require: false # Check code sanity
 gem "rubocop-performance", require: false # Just for courtesy
 gem "google-api-client" # Used for Google Drive and other stuff
 gem "pushover" # Support Pushover please
-gem "standalone_migrations" # Rails migrations in non-Rails (and non Ruby) projects.
+gem "standalone_migrations", ">= 6.0.0" # Rails migrations in non-Rails (and non Ruby) projects.
 gem "activerecord" # Used for database
 gem "activesupport" # Helpers for many actions
 gem "pg" # Postgresql
