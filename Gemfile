@@ -10,7 +10,6 @@ gem "tty-progressbar" # A flexible progress bar drawing in terminal emulators
 gem "tty-prompt" # A beautiful and powerful interactive command line promp
 gem "tty-spinner" # A terminal spinner for tasks that have non-deterministic time frame
 gem "watir" # Browser steering
-gem "watir-screenshot-stitch" # Stitch screenshots by waitir
 gem "pastel" # Colors in terminal
 gem "smsapi-client", "~> 1.0", require: "smsapi" # SMS notifications
 gem "rest-client" # We need backup because HTTParty won't send multipart file uploads
