@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "httparty" # Easy API
-gem "pry", "~> 0.12.2" # Better debugger
+# gem "pry", "~> 0.12.2" # Better debugger
 gem "tty-file" # File manipulation utility methods
 gem "tty-logger" # A readable, structured and beautiful logging for the terminal
 gem "tty-progressbar" # A flexible progress bar drawing in terminal emulators
