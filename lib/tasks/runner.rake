@@ -22,6 +22,7 @@ task :runner do |t|
       # Set default based on config
       timeout_in_seconds = config["timeout"]["default"]
       puts "[AnyRobot] Timeout enabled and set to default value #{timeout_in_seconds} seconds..."
+      puts "[AnyRobot] TEST Message
     else
       puts "[AnyRobot] Timeout disabled!"
     end
