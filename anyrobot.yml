@@ -11,6 +11,6 @@ install_command: ruby install.rb # Komenda instalacji na maszynie
 project_language: ruby # język projektu, ruby / python / javascript
 project_name: ProjectRPA # nazwa projektu, porządkowo
 project_platform: generic # platforma projektu, macos / windows / linux / generic
-runner_command: bundle exec rake runner TASK=$1 # komenda która odpala zadanie, potem Runner wykonuje np. bundle exec rake runner TASK=tasks/folder/demo.rb (używana jest zawsze cała ścieżka)
+runner_command: cp config/config.example.yml cp config/config.yml  && bundle exec rake runner TASK=$1 # komenda która odpala zadanie, potem Runner wykonuje np. bundle exec rake runner TASK=tasks/folder/demo.rb (używana jest zawsze cała ścieżka)
 task_extension: rb # rozszerzenie pliku z taskami
 tasks_folder: tasks # folder z taskami, tutaj wyszukiwane są zadania i foldery wewnątrz

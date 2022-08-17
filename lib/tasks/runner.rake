@@ -3,7 +3,7 @@ require 'pushover'
 task :runner do |t|
   # --- START OF DEBUG ---
   puts "---------- SCRIPT DETAILS"
-  puts "RUNNING FILE: #{__dir__ + "/" + __FILE__}"
+  puts "RUNNING FILE: #{__FILE__}"
   if File.exist?("input/payload.json")
     puts "---------- PAYLOAD"
     puts `cat input/payload.json`
@@ -34,6 +34,8 @@ task :runner do |t|
   ARGV.each do |env|
     puts env.inspect
   end
+  puts "---------- config.yml"
+  puts `cat config/config.yml`
   # --- END OF DEBUG ---
   # Check local environment
   environment = begin
