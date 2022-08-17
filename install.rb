@@ -2,4 +2,3 @@
 
 `gem install bundler`
 `bundle install`
-`cp config/config.example.yml config/config.yml`

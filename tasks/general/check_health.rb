@@ -2,6 +2,10 @@
 
 # frozen_string_literal: true
 
+require "bundler"
+
+Bundler.require(:default)
+
 # --- START OF DEBUG ---
 puts "---------- SCRIPT DETAILS"
 puts "RUNNING FILE: #{__FILE__}"
@@ -35,14 +39,11 @@ puts "---------- ARGV DETAILS"
 ARGV.each do |env|
   puts env.inspect
 end
-puts "---------- config.yml"
-puts `cat config/config.yml`
 # --- END OF DEBUG ---
-
-$enable_browser = true
-
-require_relative "../../lib/boot"
-
-browser_go "https://www.whatismyip.com/user-agent-info/"
-puts "Your full setup details (your 'user agent string'): #{browser_text(:h5, { class: 'card-title' } )}"
-$browser.close
+puts "---------- SCRIPT BELOW"
+spinner = TTY::Spinner.new(format: :bouncing_ball)
+browser = Watir::Browser.new(:chrome)
+spinner.stop("Initialized!")
+browser.goto "https://www.whatismyip.com/user-agent-info/"
+puts "Your full setup details (your 'user agent string'): #{browser.h5({ class: 'card-title' }).text}"
+browser.close
