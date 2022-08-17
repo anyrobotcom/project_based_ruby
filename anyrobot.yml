@@ -1,4 +1,4 @@
-after_cleanup: echo "Doing cleanup..." # co ma byc wykonane na bocie po usunieciu (ta komenda jest wykonywana przez Runnera)
+after_cleanup: echo "Doing cleanup..." # co ma byc wykonane na bocie po usunieciu (ta komenda jest wykonywana przez Runnera) repo / projektu
 after_install: echo "Install done!" # komenda po sklonowaniu (ta komenda jest wykonywana przez Runnera)
 after_runner: echo "Runned task..." # co po runnerze, np "Echo Dupa"
 after_update: ruby install.rb # komenda po nowej wersji (ta komenda jest wykonywana przez Runnera)
@@ -7,7 +7,7 @@ before_cleanup: echo "Cleanup done!" # co ma byc wykonane na bocie przed usuniec
 before_runner: echo "Runner will run!" # co wykonujemy przed runnerem  (ta komenda jest wykonywana przez Runnera) np. echo "Dupa!"
 before_update: echo "There will be update!" # co ma byc wykonane na bocie przed sprawdzeniem update (git pull = update) (ta komenda jest wykonywana przez Runnera)
 cleanup_command: echo "Cleanup is doing now..." # Komenda czyszczenia
-install_command: ruby install.rb # Komenda instalacji na maszynie
+install_command: ruby install.rb # Komenda instalacji repo na maszynie
 project_language: ruby # język projektu, ruby / python / javascript
 project_name: ProjectRPA # nazwa projektu, porządkowo
 project_platform: generic # platforma projektu, macos / windows / linux / generic

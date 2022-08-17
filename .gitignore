@@ -15,3 +15,4 @@ db/*.sqlite3
 launch/*.plist
 launch/*.sh
 .anyrobot-environment
+jobs/*.json

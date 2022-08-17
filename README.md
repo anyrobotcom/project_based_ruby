@@ -45,7 +45,7 @@ Your full setup details (your 'user agent string'): "Mozilla/5.0 (Macintosh; Int
 Your IP address appears to be: 89.64.3.221
 ```
 
-## Console (easier do develop tasks)
+## Console (easier do develop tasks - run in project folder)
 
 ```shell
 macbook@developer> bundle exec rake console
