@@ -1,7 +1,7 @@
 after_cleanup: echo "Doing cleanup..." # co ma byc wykonane na bocie po usunieciu (ta komenda jest wykonywana przez Runnera)
 after_install: echo "Install done!" # komenda po sklonowaniu (ta komenda jest wykonywana przez Runnera)
 after_runner: echo "Runned task..." # co po runnerze, np "Echo Dupa"
-after_update: bundle install && cp config/config.example.yml cp config/config.yml # komenda po nowej wersji (ta komenda jest wykonywana przez Runnera)
+after_update: bundle install && cp config/config.example.yml config/config.yml # komenda po nowej wersji (ta komenda jest wykonywana przez Runnera)
 anyrobot_version: 1 # wersja pliku konfiguracyjnego, musimy mieć wersjonowanie, co nie?
 before_cleanup: echo "Cleanup done!" # co ma byc wykonane na bocie przed usunieciem (ta komenda jest wykonywana przez Runnera)
 before_runner: echo "Runner will run!" # co wykonujemy przed runnerem  (ta komenda jest wykonywana przez Runnera) np. echo "Dupa!"
