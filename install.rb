@@ -15,8 +15,8 @@ require 'erb'
 # system "bundle install"
 # system "cp config/config.example.yml config/config.yml" # TODO: Dostosuj do potrzeb
 
-puts `which ruby`
-puts `which bundle`
+`bundle install`
+`cp config/config.example.yml config/config.yml`
 
 # ------------------------------ PRINT SUMMARY
 
