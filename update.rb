@@ -2,5 +2,4 @@
 
 # frozen_string_literal: true
 
-`gem install bundler`
 `bundle install`

@@ -12,7 +12,7 @@ install_command: ruby install.rb
 after_install: echo "Install done!" # komenda po sklonowaniu (ta komenda jest wykonywana przez Runnera)
 # When update (there is new source code of project - update command is git pull)
 before_update: echo "There will be update!"
-after_update: echo "After update run!"
+after_update: ruby update.rb
 # When run
 before_runner: echo "Runner will run!" # Przed
 runner_command: bundle exec rake runner TASK=$1 JOB=$2 # Runner...

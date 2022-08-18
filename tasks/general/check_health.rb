@@ -6,7 +6,7 @@ require "bundler"
 
 Bundler.require(:default)
 
-# TODO: Przekazywanie JOBa i TASKa do skryptu - jak sie odbywa?
+# TODO: Passing ANYROBOT_JOB and ANYROBOT_TASK to the script...
 
 # --- START OF DEBUG ---
 puts "---------- SCRIPT DETAILS"
