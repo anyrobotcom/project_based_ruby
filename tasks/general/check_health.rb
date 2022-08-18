@@ -11,11 +11,12 @@ Bundler.require(:default)
 # --- START OF DEBUG ---
 puts "---------- SCRIPT DETAILS"
 puts "RUNNING FILE: #{__FILE__}"
-if File.exist?("input/payload.json")
-  puts "---------- PAYLOAD"
-  puts `cat input/payload.json`
+payload_file = "#{__dir__}/../../jobs/#{ENV["ANYROBOT_JOB"]}.json"
+puts "---------- PAYLOAD"
+if File.exist?(payload_file)
+  puts IO.read(payload_file)
 else
-  puts "PAYLOAD: NONE"
+  puts "<PAYLOAD FILE NOT PRESENT>"
 end
 puts "---------- RUBY DETAILS"
 puts "RUBY: " + `which ruby`
