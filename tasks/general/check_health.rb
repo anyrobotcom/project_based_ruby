@@ -6,6 +6,8 @@ require "bundler"
 
 Bundler.require(:default)
 
+# TODO: Przekazywanie JOBa i TASKa do skryptu - jak sie odbywa?
+
 # --- START OF DEBUG ---
 puts "---------- SCRIPT DETAILS"
 puts "RUNNING FILE: #{__FILE__}"
