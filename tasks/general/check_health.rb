@@ -9,24 +9,25 @@ Bundler.require(:default)
 # TODO: Passing ANYROBOT_JOB and ANYROBOT_TASK to the script...
 
 class Platform
-    def self.mac
-      success = (/darwin/ =~ RUBY_PLATFORM) != nil
-    rescue StandardError => e
-      puts 'error checking for mac'
-    end
-  
-    def self.win
-      success = (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
-    rescue StandardError => e
-      puts 'error checking for windows'
-    end
+  def self.mac
+    success = (/darwin/ =~ RUBY_PLATFORM) != nil
+  rescue StandardError => e
+    puts 'error checking for mac'
   end
+
+  def self.win
+    success = (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
+  rescue StandardError => e
+    puts 'error checking for windows'
+  end
+end
 
 # --- START OF DEBUG ---
 puts "---------- SCRIPT DETAILS"
 puts "RUNNING FILE: #{__FILE__}"
 payload_file = "#{__dir__}/../../jobs/#{ENV["ANYROBOT_JOB"]}.json"
 puts "---------- PAYLOAD"
+
 if File.exist?(payload_file)
   puts IO.read(payload_file)
 else
@@ -50,7 +51,7 @@ if Platform.win
   puts "---------- CHROMEDRIVER"
   puts "Chromedriver path: " + `where chromedriver`
   puts "Chromedriver version: " + `chromedriver --version`
-else if Platform.mac
+elseif Platform.mac
   puts "---------- RUBY DETAILS"
   puts "RUBY: " + `which ruby`
   puts "GEM: " + `which gem`
