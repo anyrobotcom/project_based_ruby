@@ -51,7 +51,7 @@ if Platform.win
   puts "---------- CHROMEDRIVER"
   puts "Chromedriver path: " + `where chromedriver`
   puts "Chromedriver version: " + `chromedriver --version`
-elseif Platform.mac
+elsif Platform.mac
   puts "---------- RUBY DETAILS"
   puts "RUBY: " + `which ruby`
   puts "GEM: " + `which gem`
